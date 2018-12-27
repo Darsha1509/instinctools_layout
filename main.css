@@ -1,0 +1,523 @@
+.container {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 760px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        margin-left: 0;
+        width: 295px;
+    }
+}
+
+.content-container {
+    height: calc(100% - 200px);
+    display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+    .content-container {
+        flex-direction: column;
+    }
+}
+
+.content-menu-container {
+    width: 190px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .content-menu-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .content-menu-container {
+        flex-direction: column-reverse;
+    }
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin: 20px;
+    height: 150px;
+    width: 150px;
+    color: white;
+    font-size: 28px;
+    background-color: #f76f8d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        font-size: 30px;
+        height: 170px;
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logo {
+        font-size: 18px;
+        height: 110px;
+        width: 110px;
+    }
+}
+
+.menu-container {
+    background-color: #f76f8d;
+    height: 430px;
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu-container {
+        height: 100px;
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .menu-container {
+        padding-top: 10px;
+        height: 20px;
+    }
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu-items {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-items {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .menu-items {
+        justify-content: center;
+    }
+}
+
+.menu-item {
+    margin: 0 0 20px 20px; 
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu-item {
+        margin: 0 1px 0 1px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .menu-item {
+        margin: 0;
+        height: 10px;
+    }
+}
+
+.item-img {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .item-img {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .item-img {
+        display: none;
+    }
+}
+
+.home {
+    background-image: url('./images/home.png')
+}
+
+.stuff {
+    background-image: url('./images/stuff.png')
+}
+
+.picture {
+    background-image: url('./images/picture.png')
+}
+
+.about {
+    background-image: url('./images/about.png')
+}
+
+.item-style {
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .item-style {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .item-style {
+        color: #326bf6;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+
+    .border-left {
+        border-left: 1px solid black;
+        padding-left: 10px;
+    }
+}
+
+.menu-item:hover .item-style {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content{
+    width: calc(100% - 200px);
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.header {
+    height: 500px;
+    background-image: url(./images/venice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 320px) {
+    .header {
+        height: 200px;
+    }
+}
+
+.heading {
+    height: 125px;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 320px) {
+    .heading {
+        height: 45px;
+    }
+}
+
+
+.heading-style {
+    margin-left: 70px;
+    font-size: 50px;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .heading-style {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .heading-style {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+}
+
+.jumbotron {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 320px) {
+    .jumbotron {
+        height: 90px;
+    }
+}
+
+.jumbotron-style {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .jumbotron-style {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .jumbotron-style {
+        font-size: 18px;
+    }
+}
+
+.email-block {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media only screen and (max-width: 320px) {
+    .email-block {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 20px;
+        height: 67px;
+    }
+}
+
+
+.email-in {
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .email-in {
+        height: 25px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .email-in {
+        margin: 0 0 5px 0;
+        font-size: 15px;
+    }
+
+    input.email-in {
+        width: 170px;
+        height: 20px;
+    }
+}
+
+.button {
+    border-radius: 5px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .info-container {
+        flex-wrap: wrap;
+    }
+}
+
+.info-block {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .info-block {
+        width: 270px;
+        height: 250px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .info-block.some {
+        order: 1;
+    }
+
+    .info-block.new {
+        order: 2;
+    }
+
+    .info-block.hello {
+        order: 3;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .info-block {
+        height: 160px;
+        padding: 5px;
+        margin: 0 0 20px 0;
+    }
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .margin-left {
+        margin-left: 0;
+    }
+}
+
+.info-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .info-title {
+        font-size: 35px;
+    }
+
+    .info-text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .info-title {
+        font-size: 23px;
+    }
+
+    .info-text {
+        font-size: 14px;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap;
+        position: relative;
+    }
+}
+
+.footer-info {
+    flex-grow: 1;
+}
+
+.link-style {
+    color: #326bf6;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .link-style {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .link-style {
+        font-size: 12px;
+    }
+}
+
+.border-right {
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.rights {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .rights {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .rights {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .footer-social {
+        position: absolute;
+        right: 0;
+        top: 40px;
+    }
+}
+
+.icon-style {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .icon-style {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .icon-style {
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+    }
+}
+
