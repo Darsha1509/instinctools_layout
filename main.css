@@ -1,9 +1,10 @@
 .container {
     margin-left: 20px;
     margin-right: 10px;
+    min-width: 320px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .container {
         margin-left: 10px;
     }
@@ -11,14 +12,7 @@
 
 @media only screen and (max-width: 768px) {
     .container {
-        width: 760px;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .container {
         margin-left: 0;
-        width: 295px;
     }
 }
 
@@ -27,7 +21,7 @@
     display: flex;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .content-container {
         flex-direction: column;
     }
@@ -37,7 +31,7 @@
     width: 190px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .content-menu-container {
         width: 100%;
         display: flex;
@@ -46,7 +40,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .content-menu-container {
         flex-direction: column-reverse;
     }
@@ -71,7 +65,7 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .logo {
         font-size: 30px;
         height: 170px;
@@ -79,7 +73,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .logo {
         font-size: 18px;
         height: 110px;
@@ -93,14 +87,14 @@
     padding-top: 50px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .menu-container {
         height: 100px;
         flex-grow: 1;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .menu-container {
         padding-top: 10px;
         height: 20px;
@@ -114,7 +108,7 @@
     justify-content: flex-start;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .menu-items {
         flex-direction: row;
         justify-content: space-between;
@@ -122,13 +116,13 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .menu-items {
         justify-content: flex-start;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .menu-items {
         justify-content: center;
     }
@@ -142,13 +136,13 @@
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .menu-item {
         margin: 0 1px 0 1px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .menu-item {
         margin: 0;
         height: 10px;
@@ -162,13 +156,13 @@
     background-position: center;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .item-img {
         background-size: cover;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .item-img {
         display: none;
     }
@@ -194,15 +188,16 @@
     margin-left: 10px;
     font-size: 20px;
     color: white;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .item-style {
         font-size: 25px;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .item-style {
         color: #326bf6;
         text-decoration: underline;
@@ -215,9 +210,12 @@
     }
 }
 
+.menu-item:hover {
+    cursor: pointer;
+}
+
 .menu-item:hover .item-style {
     font-weight: bold;
-    cursor: pointer;
 }
 
 .content{
@@ -225,7 +223,7 @@
     margin-left: 50px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .content {
         width: 100%;
         margin-left: 0;
@@ -239,7 +237,7 @@
     background-size: cover;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .header {
         height: 200px;
     }
@@ -251,7 +249,7 @@
     align-items: flex-end;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .heading {
         height: 45px;
     }
@@ -264,13 +262,13 @@
     color: white;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .heading-style {
         font-size: 60px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .heading-style {
         margin-left: 10px;
         font-size: 30px;
@@ -285,7 +283,7 @@
     justify-content: flex-end;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .jumbotron {
         height: 90px;
     }
@@ -297,13 +295,13 @@
     color: white;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .jumbotron-style {
         font-size: 40px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .jumbotron-style {
         font-size: 18px;
     }
@@ -316,29 +314,28 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .email-block {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         margin-top: 20px;
         height: 67px;
     }
 }
 
-
 .email-in {
     margin-left: 5px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .email-in {
         height: 25px;
         font-size: 18px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .email-in {
         margin: 0 0 5px 0;
         font-size: 15px;
@@ -359,7 +356,7 @@
     justify-content: space-between;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .info-container {
         flex-wrap: wrap;
     }
@@ -373,10 +370,9 @@
     padding: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .info-block {
-        width: 270px;
-        height: 250px;
+        width: 285px;
         margin-top: 10px;
         overflow: hidden;
     }
@@ -394,9 +390,9 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .info-block {
-        height: 160px;
+        width: 720px;
         padding: 5px;
         margin: 0 0 20px 0;
     }
@@ -406,7 +402,7 @@
     margin-left: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .margin-left {
         margin-left: 0;
     }
@@ -417,7 +413,7 @@
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .info-title {
         font-size: 35px;
     }
@@ -427,7 +423,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .info-title {
         font-size: 23px;
     }
@@ -443,7 +439,7 @@
     font-size: 18px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .footer {
         flex-wrap: wrap;
         position: relative;
@@ -459,13 +455,13 @@
     font-size: 18px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .link-style {
         font-size: 20px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .link-style {
         font-size: 12px;
     }
@@ -480,24 +476,28 @@
     font-size: 13px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .rights {
         font-size: 15px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .rights {
         font-size: 9px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .footer-social {
         position: absolute;
         right: 0;
         top: 40px;
     }
+}
+
+.footer-social a {
+    text-decoration: none;
 }
 
 .icon-style {
@@ -506,14 +506,14 @@
     margin-right: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1440px) {
     .icon-style {
         width: 45px;
         height: 45px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .icon-style {
         width: 25px;
         height: 25px;
