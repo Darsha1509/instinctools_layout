@@ -2,9 +2,15 @@
   "name": "10",
   "version": "1.0.0",
   "scripts": {
-    "start": "browser-sync start -s -f ./"
+    "start": "browser-sync start -s -f ./",
+    "stylelint": "stylelint \"./*.css\""
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3"
+    "browser-sync": "^2.26.3",
+    "stylelint": "^9.9.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {
+    "postcss": "^7.0.7"
   }
 }
